@@ -1,0 +1,13 @@
+name: First python CI
+on:
+  push:
+    branches: ["main"]
+jobs:
+  basic-tests:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/checkout@v3
+      with: 
+        python-version: 3.12
